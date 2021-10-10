@@ -1,0 +1,24 @@
+.element__icon {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 26px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../../../images/like.svg);
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity 0.2s linear;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+}
+
+.element__icon:hover {
+    opacity: 0.5;
+}
+
+.element__icon:active {
+    background-image: url(../../../images/like_active.svg);
+    opacity: 1;
+}

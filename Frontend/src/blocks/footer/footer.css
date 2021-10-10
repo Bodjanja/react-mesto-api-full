@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+}
+
+@media (max-width: 500px){
+    .footer{
+        width: calc(100% - 38px);
+        margin: 0 auto;
+    }
+}

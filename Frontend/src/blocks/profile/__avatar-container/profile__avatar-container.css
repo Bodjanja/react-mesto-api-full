@@ -1,0 +1,20 @@
+.profile__avatar-container{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile__avatar-container:hover::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url(../../../images/pen.svg);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

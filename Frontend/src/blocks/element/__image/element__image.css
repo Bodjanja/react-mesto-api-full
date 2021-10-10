@@ -1,0 +1,39 @@
+.element__image{
+    width: 100%;
+    height: 282px;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@media(max-width: 1279px){
+    .element__image{
+        height: calc((100vw - 178px)/3);
+    }
+}
+
+@media(max-width: 1023px){
+    .element__image{
+        height: calc((100vw - 74px)/3);
+    }
+}
+
+@media(max-width: 918px){
+    .element__image{
+        height: calc((100vw - 57px)/2);
+    }
+}
+
+@media(max-width: 700px){
+    .element__image{
+        height: calc((100vw - 57px)/2);
+    }
+}
+
+@media(max-width: 620px){
+    .element__image{
+        height: calc(100vw - 40px);
+    }
+}

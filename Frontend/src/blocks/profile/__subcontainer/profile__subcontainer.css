@@ -1,0 +1,23 @@
+.profile__subcontainer{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: auto;
+    row-gap: 16px;
+    column-gap: 25px;
+    align-items: center;
+}
+
+@media(max-width: 850px){
+    .profile__subcontainer{
+        column-gap: 10px;
+    }
+}
+
+@media(max-width: 700px){
+    .profile__subcontainer{
+        padding-bottom: 36px;
+        padding-top: 22px;
+        column-gap: 10px;
+    }
+}

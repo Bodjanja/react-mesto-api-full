@@ -1,0 +1,10 @@
+.header_position_align{
+    padding-bottom: 41px;
+}
+
+@media(max-width: 700px){
+    .header_position_align{
+        padding-bottom: 31px;
+        padding-left: 27px;
+    }
+}

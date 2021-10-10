@@ -1,0 +1,5 @@
+.form__item_alternative{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

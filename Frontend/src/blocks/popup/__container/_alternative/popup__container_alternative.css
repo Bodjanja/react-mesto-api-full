@@ -1,0 +1,6 @@
+.popup__container_alternative{
+    padding: 60px 36px 60px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
