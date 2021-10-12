@@ -5,6 +5,7 @@ const {
 const ValidationError = require('../errors/ValidationError');
 const CastError = require('../errors/CastError');
 const NotFoundInBase = require('../errors/NotFoundInBaseError');
+const WrongUser = require('../errors/WrongUser');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({ })
@@ -38,7 +39,7 @@ module.exports.deleteCard = (req, res, next) => {
           .then(() => {
             res.status(STATUS_OK).send({ message: 'Карточка удалена' });
           });
-      } return res.status(NOT_AUTHORIZED).send({ message: 'Не ваша карточка' });
+      } return next(WrongUser('Не ваша карточка'));
     })
     .catch((err) => {
       if (err.message === 'NotFoundInBase') {

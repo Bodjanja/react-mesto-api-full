@@ -5,4 +5,5 @@
 
 # Данные
 https://mesto.bodjanja.nomoredomains.monster - фронтенд;
+https://backend.bodjanja.nomoredomains.monster - бэкенд;
 Публичный IPv4 130.193.55.121

@@ -10,7 +10,7 @@ const UnauthorizedLogin = require('../errors/UnauthorizedLogin');
 const CastError = require('../errors/CastError');
 const NotFoundInBase = require('../errors/NotFoundInBaseError');
 
-const { JWT_SECRET } = process.env;
+const { JWT_SECRET = 'secret' } = process.env;
 
 const opts = { // чтобы при обновлении пользователя сервер вернул новое значение объекта
   new: true,

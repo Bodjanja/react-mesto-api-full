@@ -52,7 +52,8 @@ function App() {
   React.useEffect(() => {
     api.getInitialCards()
       .then((card) => {
-        setCards(card.data);
+        const arr = card.data.reverse()
+        setCards(arr);
       })
       .catch((err) => {
         console.log(err);
